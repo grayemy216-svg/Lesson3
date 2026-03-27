@@ -32,14 +32,42 @@ console.log(`${number} is even`)
     alert(`${number} is odd`)
     console.log(`${number} is odd`)
 }
+// let name = prompt("Enter a name")
+// let age = prompt("Enter an age ")
+// if(age >= 18){
+    // alert(`Hi ${name} you ${age} you can signin to tiktok.`)
+    // console.log(`Hi ${name} you ${age} you can signin to tiktok.`)
+
+// } else{
+    // alert(`Hi ${name} if you are ${age} you cannot sign into tiktok `)
+    // console.log(`${age} if you are ${age} you cannot sign into tiktok `)
+// }
+
 let name = prompt("Enter a name")
 let age = prompt("Enter an age ")
-if(age >= 18){
-    alert(`Hi ${name} you ${age} you can signin to tiktok.`)
-    console.log(`Hi ${name} you ${age} you can signin to tiktok.`)
+let email = prompt("Enter an email");
+if(age <= 12){
+    alert(`Hi ${name} you ${age} years old you are too young to register.Sorry😒😒`)
+    console.log(`Hi ${name} you ${age} years old you are too young to register.Sorry😒😒`)
 
-} else{
-    alert(`Hi ${name} if you are ${age} you cannot sign into tiktok `)
-    console.log(`${age} if you are ${age} you cannot sign into tiktok `)
+} else if(age >12 && age < 18){
+    alert(`Hi ${name} You are ${age} years old and you have limited options to register for tiktok`)
+    console.log(`${age} You are ${age} years old and you have limited options to register for tiktok`)
+}else if(age > 18){
+        alert(`Hi ${name} You are ${age} years old and you can register for any option of your choice. We will keep in touch with you viaemail ${email}`)
+        console.log(`${age} You are ${age} years old and you can register for any option of your choice. We will keep in touch with you viaemail ${email}`)
+}else{
+    alert(`Hi ${name} you ${age} years old and you must be 12 or older to register.Sorry😒😒`)
+    console.log(`Hi ${name} you ${age} years old you must be 12 or older to register.Sorry😒😒`)
+};
 
+
+function makeMilo() {
+     alert("Making Milo...")
+    console.log("Making Milo...")
 }
+
+makeMilo(); // calling the function to execute the code inside the function
+
+
+function BookanAppointment() {
