@@ -70,4 +70,23 @@ function makeMilo() {
 makeMilo(); // calling the function to execute the code inside the function
 
 
-function BookanAppointment() {
+
+
+function checkinggender() { //creating the function gender
+let gender = prompt("Enter your gender (male/female):"); //
+console.log(gender);
+gender = gender.toLowerCase(); // converting the input to lowercase to make it case-insensitive
+gender = gender.split().join 
+//Taking and input from the user(whetther male or female)
+//and store their input in a variable called gender
+if(gender === "male"){ //checking if the input is male 
+    alert("You are a male");
+}else if(gender === "female"){ //checking if the input is   
+    alert("You are a female ");
+}
+else{
+    alert("You are not a male or female or have inputted an invalid gender " );                                         
+
+}
+}
+checkinggender(); // calling the function to execute the code inside the function
